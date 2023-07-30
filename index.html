@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Prediction Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Center-align the heading */
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Life Prediction Calculator</h1>
+        <form id="ageForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+            <br>
+            <button type="button" onclick="humanLifeCalc()">Life Prediction</button>
+        </form>
+        <div class="res-div" id="result"></div>
+        <br>
+        <div class="red-div" id="birthnum"></div>
+        <div class="orange-div" id="fatenum"></div>
+        <div class="green-div" id="lifenum"></div>
+        <br>
+        <br>
+         <form id="predictionForm">
+            <button type="button" onclick="humanLifePredictionCalc()">Yearly Prediction</button>
+            <table id="myTable">
+        <thead>
+            <tr>
+                <th class="header-cell">Life expectation</th>
+                <th class="header-cell">Age Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be dynamically added here -->
+        </tbody>
+        </table>
+
+        </form>
+   
+    <hr/>   
+     <div class="foo-div" >
+     <p>Authors :: Senthilkumar Acharya & Tamilanban. For astro related free trainings contact 72000 44010 </p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
